@@ -1,17 +1,15 @@
 @import "libs/fonts";
+@import "_reset.scss";
 
 body {
   font-family: "MuseoSansCyrl", sans-serif;
 }
-
-.h1 {
-  font-weight: 300;
+.container {
+  max-width: 950px;
+  margin: 0px auto;
+  padding: 0px 15px;
 }
 
-.parargasd {
-  font-weight: normal;
-}
-
-.parargas234 {
-  font-weight: 700;
-}
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
