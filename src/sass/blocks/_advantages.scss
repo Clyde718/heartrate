@@ -1,0 +1,30 @@
+.advantages {
+  background-color: #f6f6f6;
+  padding: 70px 0px 95px 0px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0px 0px 0px;
+  }
+  &__item {
+    max-width: 243px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-child(3) p {
+      a {
+        color: red;
+      }
+    }
+    p {
+      text-align: center;
+      font-weight: 300;
+      margin: 25px 0px 0px 0px;
+    }
+  }
+  &__title {
+    color: #0d0d0d;
+    font-size: 18px;
+    margin: 38px 0px 0px 0px;
+  }
+}

@@ -19,4 +19,30 @@
     font-size: 24px;
     text-transform: uppercase;
   }
+  &__icons {
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    margin: 67px 0px 0px 0px;
+  }
+  &__icons-item {
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  &__icons-text {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+  }
+  &__catalog {
+    margin: 18px 0px 0px 0px;
+    color: #ffffff;
+    a {
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
 }
