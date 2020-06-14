@@ -1,13 +1,16 @@
 @import "libs/fonts";
 @import "_reset.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "MuseoSansCyrl", sans-serif;
 }
 .container {
   max-width: 950px;
   margin: 0px auto;
-  padding: 0px 15px;
 }
 
 @import "blocks/promo";
@@ -17,3 +20,6 @@ body {
 @import "blocks/title";
 @import "blocks/consultation";
 @import "blocks/forms";
+@import "blocks/slider";
+@import "blocks/catalog";
+@import "blocks/catalog-item";

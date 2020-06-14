@@ -1,0 +1,38 @@
+.catalog {
+  /* .catalog__tabs */
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 69px;
+  }
+
+  /* .catalog__tabsItem */
+
+  &__tabsItem {
+    /* Style for "Прямоуголь" */
+    width: 220px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    color: #6b6b6b;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    margin: 0px 5px;
+    transform: skewX(-25deg);
+    cursor: pointer;
+    > div {
+      transform: skewX(25deg);
+    }
+    &--active {
+      background-color: #c70101;
+      color: #ffffff;
+      border-color: transparent;
+    }
+  }
+}
+.container {
+}
+.title {
+}
