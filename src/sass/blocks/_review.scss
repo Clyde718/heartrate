@@ -1,0 +1,37 @@
+.review {
+  color: #0d0d0d;
+  display: flex;
+  &--mg-bt &__img {
+    margin-bottom: 100px;
+  }
+
+  &__content {
+    padding-left: 61px;
+    h4 {
+      font-size: 18px;
+      color: #0d0d0d;
+    }
+  }
+
+  &__signature {
+    font-size: 14px;
+    color: #646464;
+    margin: 10px 0px 15px 0px;
+    display: block;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  &__goals {
+    font-weight: 300;
+    margin: 0px 0px 20px 0px;
+  }
+
+  &__thanks {
+    font-weight: 300;
+  }
+}
