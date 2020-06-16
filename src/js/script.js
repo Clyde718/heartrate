@@ -27,4 +27,24 @@ $(document).ready(function () {
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
 
+
+  // modal
+  $('[data-modal=consultation]').on('click', function () {
+    $('#consultation, .overlay').fadeIn(); // открыть заказ консультации 
+  })
+  $('.modal__close').on('click', function () {
+    $('#consultation, #order, #thanks, .overlay').fadeOut(); // закрывать любое окно по клику на крестик 
+  })
+
+  // btn-mini
+  // $('.button--catalog-item').on('click', function () {
+  //   $('#order, .overlay').fadeIn();
+  // })
+  $('.button--catalog-item').each(function (i) {
+    $(this).on('click', function () {
+      $('.modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('#order, .overlay').fadeIn();
+    })
+  })
+
 });
