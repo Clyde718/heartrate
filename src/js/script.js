@@ -100,8 +100,28 @@ $(document).ready(function () {
       $('form').trigger('reset');
     });
     return false;
-  })
+  });
 
 
 
+  // up-arrow
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.up-arrow').fadeIn();
+    } else {
+      $('.up-arrow').fadeOut();
+    }
+  });
+
+
+  // smooth scrolling
+  $("a[href='#up']").click(function () {
+    var _href = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    return false;
+  });
+
+
+  // animate
+  new WOW().init();
 });

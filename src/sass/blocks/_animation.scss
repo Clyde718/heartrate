@@ -1,0 +1,26 @@
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+
+  30% {
+    // transform: scale(1.1);
+  }
+
+  60% {
+    // transform: scale(1.3);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.advantages__img {
+  animation-name: heartbeat;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
