@@ -1,5 +1,7 @@
+@import "libs/reset";
 @import "libs/fonts";
-@import "_reset.scss";
+@import "libs/slick";
+@import "libs/animate";
 
 * {
   box-sizing: border-box;
