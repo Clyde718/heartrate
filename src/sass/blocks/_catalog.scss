@@ -1,16 +1,21 @@
 .catalog {
-  /* .catalog__tabs */
-
+  width: 100%;
+  .container {
+    @media (max-width: 1036px) {
+      max-width: 850px;
+    }
+  }
   &__tabs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 69px;
+    @media (max-width: 509px) {
+      margin-top: 59px;
+    }
   }
 
-  /* .catalog__tabsItem */
-
   &__tabsItem {
-    /* Style for "Прямоуголь" */
     width: 220px;
     height: 50px;
     border: 2px solid #d0d0d0;
@@ -21,6 +26,9 @@
     line-height: 50px;
     margin: 0px 5px;
     transform: skewX(-25deg);
+    @media (max-width: 659px) {
+      margin: 10px 10px;
+    }
     cursor: pointer;
     > div {
       transform: skewX(25deg);
@@ -31,8 +39,4 @@
       border-color: transparent;
     }
   }
-}
-.container {
-}
-.title {
 }

@@ -17,6 +17,10 @@
   padding: 37px 40px 40px;
   border-radius: 4px;
   display: none;
+  @media (max-width: 480px) {
+    width: 300px;
+    padding: 17px 20px 20px;
+  }
   input {
     outline: none;
     border: none;
@@ -41,6 +45,10 @@
     font-size: 30px;
     right: -33px;
     line-height: 30px;
+    @media (max-width: 480px) {
+      top: -33px;
+      right: 0px;
+    }
   }
 
   &__subtitle {

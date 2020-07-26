@@ -1,31 +1,70 @@
 .slider {
   padding: 108px 0px;
+  @media (max-width: 767px) {
+    padding: 68px 0px;
+  }
   &__inner {
     max-width: 750px;
+    width: 100%;
+    height: 100%;
     margin: 0px auto;
     position: relative;
+    min-width: 0;
     .slick-prev,
     .slick-next {
       background-color: transparent;
       border: none;
       img {
         width: 31px;
+        @media (max-width: 430px) {
+          width: 21px;
+        }
         &:hover {
           cursor: pointer;
         }
       }
     }
 
+    &__inner-item {
+      min-width: 0;
+      position: relative;
+    }
+
     .slick-prev {
       position: absolute;
       top: 50%;
       left: -66px;
+      z-index: 10;
+      transform: translateY(-50%);
+      @media (max-width: 902px) {
+        left: -36px;
+      }
+      @media (max-width: 842px) {
+        left: -6px;
+      }
     }
 
     .slick-next {
       position: absolute;
       top: 50%;
       right: -66px;
+      z-index: 10;
+      transform: translateY(-50%);
+      @media (max-width: 902px) {
+        right: -36px;
+      }
+      @media (max-width: 842px) {
+        right: -6px;
+      }
+    }
+  }
+  .slick-slide {
+    display: block;
+    height: 100%;
+    img {
+      display: block;
+      max-width: 80%;
+      margin: 0 auto;
     }
   }
 }

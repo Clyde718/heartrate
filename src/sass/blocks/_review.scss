@@ -1,12 +1,29 @@
 .review {
   color: #0d0d0d;
   display: flex;
-  &--mg-bt &__img {
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  &__img {
+    flex: 0 0 169px;
+  }
+  &--mg-bt {
     margin-bottom: 100px;
+    @media (max-width: 767px) {
+      margin-bottom: 70px;
+    }
   }
 
   &__content {
+    flex: 1 1 auto;
     padding-left: 61px;
+    @media (max-width: 767px) {
+      padding-left: 31px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 0px;
+      margin: 40px 0px 0px 0px;
+    }
     h4 {
       font-size: 18px;
       color: #0d0d0d;

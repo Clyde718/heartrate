@@ -1,16 +1,26 @@
 .advantages {
   background-color: #f6f6f6;
   padding: 70px 0px 95px 0px;
+  @media (max-width: 758px) {
+    padding: 50px 0px 0px 0px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 65px 0px 0px 0px;
+    flex-wrap: wrap;
+    @media (max-width: 758px) {
+      justify-content: center;
+    }
   }
   &__item {
     max-width: 243px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 758px) {
+      margin: 0px 0px 50px 0px;
+    }
     &:nth-child(3) p {
       a {
         color: red;

@@ -2,7 +2,8 @@ $(document).ready(function () {
   $('.slider__inner').slick({
     speed: 500,
     prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>'
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
+    adaptiveHeight: true
   });
 
 
@@ -123,5 +124,14 @@ $(document).ready(function () {
 
 
   // animate
-  new WOW().init();
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animated', // default
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
 });

@@ -11,7 +11,7 @@ gulp.task('server', function () {
 
   browserSync({
     server: {
-      baseDir: "dist"
+      baseDir: "dist/"
     }
   });
 
@@ -54,13 +54,23 @@ gulp.task('icons', () => {
     .pipe(gulp.dest('dist/icons'))
 })
 
+gulp.task('mailer', function () {
+  return gulp.src("src/mailer/**/*")
+    .pipe(gulp.dest("dist/mailer"));
+});
+
 gulp.task('images', () => {
   return gulp.src('src/img/**/*')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'))
 })
 
+gulp.task('slick', () => {
+  return gulp.src('src/css/slick.css')
+    .pipe(gulp.dest('dist/css'))
+})
 
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'scripts', 'fonts', 'icons', 'images'));
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'html', 'mailer', 'slick', 'scripts', 'fonts', 'icons', 'images'));

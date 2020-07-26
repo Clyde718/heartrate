@@ -1,6 +1,5 @@
 @import "libs/reset";
 @import "libs/fonts";
-@import "libs/slick";
 @import "libs/animate";
 
 * {
@@ -12,7 +11,9 @@ body {
 }
 .container {
   max-width: 950px;
+  padding: 0px 15px;
   margin: 0px auto;
+  width: 100%;
 }
 
 @import "blocks/promo";
